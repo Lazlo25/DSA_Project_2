@@ -1,6 +1,6 @@
 import requests, base64, time, csv
 
-credentials = base64.b64encode(b"ae9aa195d13542d7a1bd6c68a1ce7553:91e8119c8e764d4f96f10312379d61eb").decode()
+credentials = base64.b64encode(b"").decode()
 token = requests.post("https://accounts.spotify.com/api/token",
     headers={"Authorization": f"Basic {credentials}"},
     data={"grant_type": "client_credentials"}
@@ -30,7 +30,6 @@ while len(songs) < 1000:
 #     current_page += 10
 #     time.sleep(0.01)
 #     #print(songSet)
-
 # print(songs[0])
 # print("Hello, World!")
 # with open("songs.csv", "w", newline="", encoding="utf-8") as file:
