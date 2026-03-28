@@ -13,7 +13,7 @@ for x in range (0,len(words),21):
     dict = {"artist" : words[x+2], "album" : words[x+3], "song":words[x+4], "popularity": words[x+5]}
     data.append(dict)
 
-#print(data[0])
-#print(data[1])
+print(data[0])
+print(data[1])
 
 
